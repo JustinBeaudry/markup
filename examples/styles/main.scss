@@ -1,0 +1,41 @@
+// bower:scss
+// endbower
+
+$xl: 1.25em;
+$l: 0.938em;
+$m: 0.625em;
+
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+@each $sizeText, $size in (xl, $xl), (l, $l), (m, $m) {
+  .margin-#{$sizeText} {
+    margin: #{$size};
+  }
+}
+
+@each $sizeText, $size, $direction in (xl, $xl, top),(xl, $xl, bottom),(xl, $xl, right),(xl, $xl, left),(l, $l, top),(l, $l, bottom),(l, $l, right),(l, $l, left),(m, $m, top),(m, $m, bottom),(m, $m, right),(m, $m, left) {
+  .margin-#{$direction}-#{$sizeText} {
+    margin-#{$direction}: #{$size};
+  }
+}
+
+

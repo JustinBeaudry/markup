@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Markup Templates | Data Attribute Date Binding</title>
+
+  <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+    <main class="margin-xl" data-mu-tmpl>
+      <h1 data-title></h1>
+      <ul class="list-unstyled" data-mu-repeat="pokemon in pokedex">
+        <li data-pokemon></li>
+      <ul>
+    <main>
+    <script src="./markup.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
